@@ -1,14 +1,19 @@
 <template>
-  <header>
-    <div class="wrapper">
-      <nav>
+  <v-app>
+    <header>
+      <div class="wrapper"></div>
+    </header>
+    <nav>
+      <v-app-bar class="d-flex justify-center" :elevation="8">
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
+      </v-app-bar>
+    </nav>
 
-  <RouterView />
+    <div class="mt-16">
+      <RouterView />
+    </div>
+  </v-app>
 </template>
 
 <script setup lang="ts">
